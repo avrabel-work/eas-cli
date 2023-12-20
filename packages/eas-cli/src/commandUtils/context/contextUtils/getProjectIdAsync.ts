@@ -39,7 +39,7 @@ export async function saveProjectIdToAppConfigAsync(
     case 'warn': {
       Log.warn();
       Log.warn(
-        `Warning: Your project uses dynamic app configuration, and the EAS project ID can't automatically be added to it.`
+        `Warning: Your project uses dynamic app configuration that does not extend a static configuration, and the EAS project ID can't automatically be added to it.`
       );
       Log.warn(
         chalk.dim(
